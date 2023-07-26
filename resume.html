@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Portfolio</Title>
+        <style>
+            body{background-image: url('bg.gif');
+            background-color: black;color: white;}
+            .topnav{ width: 100%; height: 63px; display: flex; }
+            .topnav a{ color: white; text-decoration: none; }
+            .topnav a:hover { color: gray; }
+            a{ background-color: black; }
+            .heading { margin-left: 50px; display: flex;
+            color: white; text-align: center; width: 30%; }
+            .heading img { margin-top: 14px; }
+            .heading a{  margin-left: 10px; }
+            .home { margin-left: 360px; width: 5%; }
+            .about { margin-left: 70px; width: 5%; }
+            .res{ margin-left: 55px; width:5%; }
+            .contact { margin-left: 30px; width:5%; }
+            .education { margin-left: 100px;
+            margin-right: 100px; display: flex;
+            justify-content: space-between; text-align: center;}
+            .eduheading {text-align: center; font-weight: bolder;
+                font-family: Tahoma, Verdana, sans-serif;
+                font-size: 30px; color: white}
+            .sslc {background-color: black;  width: 300px;
+            box-shadow: 1px 1px 20px 5px rgb(83, 104, 219); }
+            .hsc {background-color: black; width: 300px;
+            box-shadow: 1px 1px 20px 5px rgb(83, 104, 219);}
+            .ug { background-color: black; width: 300px;
+                box-shadow: 1px 1px 20px 5px rgb(83, 104, 219);}
+            .courses { display: grid;
+            grid-template-columns: auto auto; grid-row-gap: 50px;
+                margin-top: 100px; text-align: center; }
+            .courseimg { margin-top: 150px; }
+            .img img { box-shadow: 1px 1px 10px 5px rgb(83, 104, 219); }
+        </style>
+    </head>
+    <body>
+        <div class="topnav" id="top">
+            <div class="heading">
+                <a href="home.html"><img src="home.png" alt="" height="25px" width="25px"></a>
+                <a href="home.html"><h3>Home</h3></a>
+            </div>
+            <div class="home">
+                <a href="#home1"><h3></h3></a>
+            </div>
+            <!-- <div class="about">
+                <a href="#aboutme"><h3>Projects</h3></a>
+            </div>
+            <div class="res">
+                <a href="#resume"><h3>Skills</h3></a>
+            </div>
+            <div class="contact">
+                <a href="#con"><h3>Achievements</h3></a>
+            </div> -->
+        </div>
+        <hr color="white">
+        <br><br>
+        <h1 class="eduheading" >EDUCATION DETAILS</h1>
+        <hr color="white" width="150"><br><br><br><br><br>
+        <div class="education">
+            <div class="sslc">
+                <h3>SSLC</h3>
+                <hr width="35">
+                <h3>Syed Ammal Matriculation Higher Secondary School</h3>
+                <h4>Year of passed:2018</h4>
+            </div>
+            <div class="hsc">
+                <h3>HSC</h3>
+                <hr width="35">
+                <h3>Syed Ammal Matriculation Higher Secondary School</h3>
+                <h4>Year of passed:2020</h4>
+            </div>
+            <div class="ug">
+                <h3>UG</h3>
+                <hr width="25">
+                <h3>B.E. Computer Science & Engineering</h3>
+                <h3>National Engineering College</h3>
+                <h4>(2020-2024)</h4>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <h1 class="eduheading">ONLINE CERTIFICATION</h1>
+        <hr color="white" width="150">
+        <div class="courses">
+            <div class="img">
+                <img src="cloud.png" alt="" width="500px" height="350px">
+            </div>
+            <div class="name1">
+                <h3 class="courseimg">Structuring Machine Learning Projects</h3>
+            </div>
+            <div class="name2">
+                <h3 class="courseimg">Introduction to Industry 4.0 Internet of things</h3>
+            </div>
+            <div class="img">
+                <img src="datascience.jpg" alt="" width="500px" height="350px">
+            </div>
+        </div>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyA01SEPdHh3GCdhrZm2erBWxaoP_FU3XAo",
+              authDomain: "myportfolio-75794.firebaseapp.com",
+              projectId: "myportfolio-75794",
+              storageBucket: "myportfolio-75794.appspot.com",
+              messagingSenderId: "598686238838",
+              appId: "1:598686238838:web:1e41e89a1a23e8b48a3757",
+              measurementId: "G-2W2KVTMJ0L"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </body>
+</html>
